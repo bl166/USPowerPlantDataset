@@ -3,11 +3,11 @@ This repo is a demonstration of dataset creation. The US Power Plants NAIP/LANDS
 Data sources:
 * [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) for high-resolution imagery
 * [Landsat8](https://landsat.usgs.gov/landsat-8) for medium-resolution imagery
-* [EPA EGRID documents](https://www.epa.gov/energy/emissions-generation-resource-integrated-database-egrid) for latitude and longtitude locations
+* [EPA EGRID documents](https://www.epa.gov/energy/emissions-generation-resource-integrated-database-egrid) for latitude and longitude locations
 
-## 1 &nbsp; Data Explaination
+## 1 &nbsp; Data Explanation
 
-Items in _Italics_ are related with construction, not to worry for classification concerns; in __bold__ are respectively images, labels, register, and sample code for image segmentation/pixelwise classification; and there are some ```useful scripts``` for making and testing this dataset. Starred* Items are outputs to expect as the results of dataset construction.
+Items in _Italics_ are related with construction, not to worry for classification concerns; in __bold__ are respectively images, labels, register, and sample code for image segmentation/pixel-wise classification; and there are some ```useful scripts``` for making and testing this dataset. Starred* Items are outputs to expect as the results of dataset construction.
 
 1. _/uspp_naip_: high-resolution power plant images (~1115x1115 pix, 5M/ea), used for gathering annotations;
 
@@ -29,7 +29,7 @@ Annotation tool available here: https://github.com/tn74/MTurkAnnotationTool;
 
 8. ```cropPowerPlants.py```: exports satellite imagery from Google Earth Engine;
 
-9. ```fixLs.m```: pre-processes landsat imagery, including intensity strech and gamma correction;
+9. ```fixLs.m```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
 
 10. ```make.py```: constructs the dataset;
 
@@ -112,7 +112,7 @@ are __renamed__ (if annotations are found valid) or __moved__ to ```/exceptions`
     * Note#4 (new name convention): *DataType\_egridUniqueID\_State\_Type.tif*<br/>
   * Finally, a new file named ```uspp_metadata.geojson``` is generated. It contains all annotated power plants' metadata.
 
-5. In case that the process is interrupted, you can re-run it at the spot. All images that are already processed will be intouched, and new power plants will be added to the end of the metadata.
+5. In case that the process is interrupted, you can re-run it at the spot. All images that are already processed will be untouched, and new power plants will be added to the end of the metadata.
 
 #### Summary
 * Input: __/uspp\_naip__, __accepted\_ann\_json.txt__, __/uspp\_landsat__ (optional), __/uspp\_metadata.geojson__ (optional)
