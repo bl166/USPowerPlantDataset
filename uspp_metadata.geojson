@@ -1,0 +1,3239 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.1594,
+                    35.0361
+                ]
+            },
+            "properties": {
+                "egrid_ID": "300",
+                "plant_name": "Black Mountain Generating Station",
+                "state_name": "AZ",
+                "county_name": "MOHAVE",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.049,
+                "nameplate_cap_MW": 121.0,
+                "co2_emission": 30564.6130614826,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.626389,
+                    33.230833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "303",
+                "plant_name": "Buckeye Generation Center, LLC",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 652.2,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.576111,
+                    33.419167
+                ]
+            },
+            "properties": {
+                "egrid_ID": "304",
+                "plant_name": "Buckeye Union HS District 201",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.256,
+                "nameplate_cap_MW": 3.3,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.42899,
+                    34.71843
+                ]
+            },
+            "properties": {
+                "egrid_ID": "306",
+                "plant_name": "Chino Solar Valley",
+                "state_name": "AZ",
+                "county_name": "Yavapai",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.283,
+                "nameplate_cap_MW": 19.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.3033,
+                    34.9394
+                ]
+            },
+            "properties": {
+                "egrid_ID": "307",
+                "plant_name": "Cholla",
+                "state_name": "AZ",
+                "county_name": "Navajo",
+                "primary_fuel": "SUB",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.671,
+                "nameplate_cap_MW": 1128.8,
+                "co2_emission": 8267089.26642345,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.948333,
+                    32.240833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "309",
+                "plant_name": "Cogeneration 2",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.598,
+                "nameplate_cap_MW": 6.5,
+                "co2_emission": 20963.5190197863,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.813333,
+                    32.101944
+                ]
+            },
+            "properties": {
+                "egrid_ID": "310",
+                "plant_name": "Cogenra - TEP",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.057,
+                "nameplate_cap_MW": 1.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.503327,
+                    32.917399
+                ]
+            },
+            "properties": {
+                "egrid_ID": "311",
+                "plant_name": "Coolidge Generating Station",
+                "state_name": "AZ",
+                "county_name": "PINAL",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.033,
+                "nameplate_cap_MW": 726.0,
+                "co2_emission": 119215.603734281,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.483636,
+                    33.15512
+                ]
+            },
+            "properties": {
+                "egrid_ID": "312",
+                "plant_name": "Copper Crossing Gen Station",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 909.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.484011,
+                    33.160601
+                ]
+            },
+            "properties": {
+                "egrid_ID": "313",
+                "plant_name": "Copper Crossing Solar LLC",
+                "state_name": "AZ",
+                "county_name": "GILA",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.303,
+                "nameplate_cap_MW": 20.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.2708,
+                    34.5789
+                ]
+            },
+            "properties": {
+                "egrid_ID": "314",
+                "plant_name": "Coronado Generating Station",
+                "state_name": "AZ",
+                "county_name": "Apache",
+                "primary_fuel": "SUB",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.753,
+                "nameplate_cap_MW": 821.8,
+                "co2_emission": 6677485.00962673,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.661667,
+                    33.034722
+                ]
+            },
+            "properties": {
+                "egrid_ID": "315",
+                "plant_name": "Cotton Center Solar",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.293,
+                "nameplate_cap_MW": 17.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.946052,
+                    33.439375
+                ]
+            },
+            "properties": {
+                "egrid_ID": "316",
+                "plant_name": "Crosscut",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "",
+                "fossil_fuel": "",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 33.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.570669,
+                    35.197044
+                ]
+            },
+            "properties": {
+                "egrid_ID": "317",
+                "plant_name": "Davis Dam",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.521,
+                "nameplate_cap_MW": 254.8,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.899734,
+                    32.17356
+                ]
+            },
+            "properties": {
+                "egrid_ID": "318",
+                "plant_name": "Davis Monthan AFB (AZ) West Airfield",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.299,
+                "nameplate_cap_MW": 12.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.7889,
+                    32.9042
+                ]
+            },
+            "properties": {
+                "egrid_ID": "320",
+                "plant_name": "Desert Basin Generating Station",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.259,
+                "nameplate_cap_MW": 646.1,
+                "co2_emission": 679663.27199649,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.5538,
+                    31.364122
+                ]
+            },
+            "properties": {
+                "egrid_ID": "322",
+                "plant_name": "Douglas",
+                "state_name": "AZ",
+                "county_name": "Cochise",
+                "primary_fuel": "DFO",
+                "fossil_fuel": "OIL",
+                "capacity_factor": 0.001,
+                "nameplate_cap_MW": 26.1,
+                "co2_emission": 453.605497698372,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.078333,
+                    34.513333
+                ]
+            },
+            "properties": {
+                "egrid_ID": "323",
+                "plant_name": "Dry Lake Solar",
+                "state_name": "AZ",
+                "county_name": "Navajo",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 50.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.1734,
+                    34.6062
+                ]
+            },
+            "properties": {
+                "egrid_ID": "324",
+                "plant_name": "Dry Lake Wind II LLC",
+                "state_name": "AZ",
+                "county_name": "Navajo",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.213,
+                "nameplate_cap_MW": 65.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.2842,
+                    34.6596
+                ]
+            },
+            "properties": {
+                "egrid_ID": "325",
+                "plant_name": "Dry Lake Wind LLC",
+                "state_name": "AZ",
+                "county_name": "Navajo",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.212,
+                "nameplate_cap_MW": 63.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.428741,
+                    32.64856
+                ]
+            },
+            "properties": {
+                "egrid_ID": "327",
+                "plant_name": "Foothills Solar Plant",
+                "state_name": "AZ",
+                "county_name": "Yuma",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.263,
+                "nameplate_cap_MW": 35.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.35,
+                    31.555278
+                ]
+            },
+            "properties": {
+                "egrid_ID": "328",
+                "plant_name": "Fort Huachuca Solar PV Project",
+                "state_name": "AZ",
+                "county_name": "Cochise",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 17.7,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.819722,
+                    32.102778
+                ]
+            },
+            "properties": {
+                "egrid_ID": "329",
+                "plant_name": "Gato Montes Solar, LLC",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.234,
+                "nameplate_cap_MW": 5.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.6944,
+                    32.975
+                ]
+            },
+            "properties": {
+                "egrid_ID": "332",
+                "plant_name": "Gila River Power Station",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.118,
+                "nameplate_cap_MW": 2476.0,
+                "co2_emission": 1915104.3445741,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.798333,
+                    33.356389
+                ]
+            },
+            "properties": {
+                "egrid_ID": "333",
+                "plant_name": "Gilbert Solar Facility I, LLC",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.215,
+                "nameplate_cap_MW": 2.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.665833,
+                    33.026389
+                ]
+            },
+            "properties": {
+                "egrid_ID": "334",
+                "plant_name": "Gillespie 1",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.34,
+                "nameplate_cap_MW": 15.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.483872,
+                    36.936614
+                ]
+            },
+            "properties": {
+                "egrid_ID": "335",
+                "plant_name": "Glen Canyon Dam",
+                "state_name": "AZ",
+                "county_name": "Coconino",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.291,
+                "nameplate_cap_MW": 1312.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.3,
+                    33.533333
+                ]
+            },
+            "properties": {
+                "egrid_ID": "336",
+                "plant_name": "Glendale Energy Power Plant",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.676,
+                "nameplate_cap_MW": 2.8,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.133272,
+                    35.054029
+                ]
+            },
+            "properties": {
+                "egrid_ID": "337",
+                "plant_name": "Griffith Energy Project",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.421,
+                "nameplate_cap_MW": 654.4,
+                "co2_emission": 1046848.42649257,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.277356,
+                    34.168264
+                ]
+            },
+            "properties": {
+                "egrid_ID": "338",
+                "plant_name": "Headgate Rock",
+                "state_name": "AZ",
+                "county_name": "La Paz",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.468,
+                "nameplate_cap_MW": 19.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.738006,
+                    36.01551
+                ]
+            },
+            "properties": {
+                "egrid_ID": "339",
+                "plant_name": "Hoover Dam (AZ)",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.158,
+                "nameplate_cap_MW": 1039.4,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.344,
+                    33.5907
+                ]
+            },
+            "properties": {
+                "egrid_ID": "340",
+                "plant_name": "Horse Mesa",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.014,
+                "nameplate_cap_MW": 129.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.34397,
+                    33.02566
+                ]
+            },
+            "properties": {
+                "egrid_ID": "342",
+                "plant_name": "Hyder Solar",
+                "state_name": "AZ",
+                "county_name": "Yuma",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.218,
+                "nameplate_cap_MW": 22.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.5264,
+                    36.9708
+                ]
+            },
+            "properties": {
+                "egrid_ID": "343",
+                "plant_name": "IRC Generator Facility",
+                "state_name": "AZ",
+                "county_name": "COCONINO",
+                "primary_fuel": "DFO",
+                "fossil_fuel": "OIL",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 3.0,
+                "co2_emission": 0.0312902343956683,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.9047,
+                    32.16
+                ]
+            },
+            "properties": {
+                "egrid_ID": "345",
+                "plant_name": "Irvington Generating Station",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUB",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.172,
+                "nameplate_cap_MW": 558.5,
+                "co2_emission": 733742.629997619,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.924722,
+                    33.603056
+                ]
+            },
+            "properties": {
+                "egrid_ID": "346",
+                "plant_name": "Jewish Community Center PV",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.228,
+                "nameplate_cap_MW": 1.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.0675,
+                    35.145833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "347",
+                "plant_name": "Kingman 1",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.223,
+                "nameplate_cap_MW": 10.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.9353,
+                    33.3556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "348",
+                "plant_name": "Kyrene Generating Station",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.14,
+                "nameplate_cap_MW": 573.7,
+                "co2_emission": 313142.858263073,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.004591,
+                    35.241675
+                ]
+            },
+            "properties": {
+                "egrid_ID": "350",
+                "plant_name": "La Senita",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.192,
+                "nameplate_cap_MW": 1.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.24,
+                    33.820556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "351",
+                "plant_name": "Lake Pleasant WTP",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.263,
+                "nameplate_cap_MW": 6.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.414596,
+                    33.409063
+                ]
+            },
+            "properties": {
+                "egrid_ID": "353",
+                "plant_name": "Macys Goodyear",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.184,
+                "nameplate_cap_MW": 3.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.603056,
+                    33.346944
+                ]
+            },
+            "properties": {
+                "egrid_ID": "354",
+                "plant_name": "Mesa Solar Array",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.147,
+                "nameplate_cap_MW": 4.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.864167,
+                    33.345
+                ]
+            },
+            "properties": {
+                "egrid_ID": "355",
+                "plant_name": "Mesquite Generating Station",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.28,
+                "nameplate_cap_MW": 1383.2,
+                "co2_emission": 2249307.33102081,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.904028,
+                    33.341833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "356",
+                "plant_name": "Mesquite Solar 1",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.274,
+                "nameplate_cap_MW": 170.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.4431,
+                    33.5536
+                ]
+            },
+            "properties": {
+                "egrid_ID": "358",
+                "plant_name": "Mormon Flat",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.009,
+                "nameplate_cap_MW": 63.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.3886,
+                    36.9047
+                ]
+            },
+            "properties": {
+                "egrid_ID": "359",
+                "plant_name": "Navajo Generating Station",
+                "state_name": "AZ",
+                "county_name": "Coconino",
+                "primary_fuel": "BIT",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.82,
+                "nameplate_cap_MW": 2409.3,
+                "co2_emission": 19002377.2974695,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.113434,
+                    33.47596
+                ]
+            },
+            "properties": {
+                "egrid_ID": "360",
+                "plant_name": "New Harquahala Generating Company, LLC",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.113,
+                "nameplate_cap_MW": 1325.1,
+                "co2_emission": 553346.065840297,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.1262,
+                    32.401
+                ]
+            },
+            "properties": {
+                "egrid_ID": "361",
+                "plant_name": "North Loop",
+                "state_name": "AZ",
+                "county_name": "PIMA",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.002,
+                "nameplate_cap_MW": 107.8,
+                "co2_emission": 1798.75642526323,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.476666,
+                    33.681944
+                ]
+            },
+            "properties": {
+                "egrid_ID": "362",
+                "plant_name": "Northwest Regional",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.855,
+                "nameplate_cap_MW": 3.2,
+                "co2_emission": 0.000386393225198844,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.334953,
+                    34.503158
+                ]
+            },
+            "properties": {
+                "egrid_ID": "363",
+                "plant_name": "Novo BioPower Plant",
+                "state_name": "AZ",
+                "county_name": "Navajo",
+                "primary_fuel": "WDS",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.714,
+                "nameplate_cap_MW": 27.2,
+                "co2_emission": 6568.90383367234,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.9122,
+                    33.4225
+                ]
+            },
+            "properties": {
+                "egrid_ID": "364",
+                "plant_name": "Ocotillo Power Plant",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.008,
+                "nameplate_cap_MW": 1143.5,
+                "co2_emission": 58174.1453622815,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.8617,
+                    33.3881
+                ]
+            },
+            "properties": {
+                "egrid_ID": "365",
+                "plant_name": "Palo Verde",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NUC",
+                "fossil_fuel": "NUCLEAR",
+                "capacity_factor": 0.876,
+                "nameplate_cap_MW": 4209.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.661389,
+                    33.021111
+                ]
+            },
+            "properties": {
+                "egrid_ID": "366",
+                "plant_name": "Paloma Solar",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.261,
+                "nameplate_cap_MW": 17.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.0,
+                    33.638333
+                ]
+            },
+            "properties": {
+                "egrid_ID": "367",
+                "plant_name": "Paradise Valley H.S. PV",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.233,
+                "nameplate_cap_MW": 1.3,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.271111,
+                    35.415556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "368",
+                "plant_name": "Perrin Ranch Wind LLC",
+                "state_name": "AZ",
+                "county_name": "Coconino",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.24,
+                "nameplate_cap_MW": 99.2,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.98,
+                    33.45
+                ]
+            },
+            "properties": {
+                "egrid_ID": "369",
+                "plant_name": "Phoenix Airport East Economy Lot",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.212,
+                "nameplate_cap_MW": 1.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.98,
+                    33.45
+                ]
+            },
+            "properties": {
+                "egrid_ID": "370",
+                "plant_name": "Phoenix Airport Rental Car Center",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.469,
+                "nameplate_cap_MW": 1.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.242778,
+                    32.369722
+                ]
+            },
+            "properties": {
+                "egrid_ID": "371",
+                "plant_name": "Picture Rocks Solar, LLC",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.313,
+                "nameplate_cap_MW": 20.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.82,
+                    32.116389
+                ]
+            },
+            "properties": {
+                "egrid_ID": "372",
+                "plant_name": "Prairie Fire",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.23,
+                "nameplate_cap_MW": 4.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.4008,
+                    34.6584
+                ]
+            },
+            "properties": {
+                "egrid_ID": "373",
+                "plant_name": "Prescott Airport",
+                "state_name": "AZ",
+                "county_name": "Yavapai",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.062,
+                "nameplate_cap_MW": 9.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.4275,
+                    34.649444
+                ]
+            },
+            "properties": {
+                "egrid_ID": "374",
+                "plant_name": "Prescott Solar Plant",
+                "state_name": "AZ",
+                "county_name": "Yavapai",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.281,
+                "nameplate_cap_MW": 10.8,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.612222,
+                    33.2675
+                ]
+            },
+            "properties": {
+                "egrid_ID": "375",
+                "plant_name": "Queen Creek Solar Farm",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.313,
+                "nameplate_cap_MW": 19.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.831401,
+                    32.367013
+                ]
+            },
+            "properties": {
+                "egrid_ID": "376",
+                "plant_name": "RE Ajo 1 LLC",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.259,
+                "nameplate_cap_MW": 4.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.177222,
+                    34.585833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "377",
+                "plant_name": "RE Bagdad Solar I LLC",
+                "state_name": "AZ",
+                "county_name": "Yavapai",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.269,
+                "nameplate_cap_MW": 15.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.840641,
+                    33.334562
+                ]
+            },
+            "properties": {
+                "egrid_ID": "379",
+                "plant_name": "Redhawk Generating Facility",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.369,
+                "nameplate_cap_MW": 1140.3,
+                "co2_emission": 1675490.86630272,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.0331,
+                    32.2894
+                ]
+            },
+            "properties": {
+                "egrid_ID": "381",
+                "plant_name": "Roger Road WWTP",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.222,
+                "nameplate_cap_MW": 1.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.161786,
+                    33.671104
+                ]
+            },
+            "properties": {
+                "egrid_ID": "382",
+                "plant_name": "Roosevelt",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.12,
+                "nameplate_cap_MW": 36.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.180833,
+                    33.378333
+                ]
+            },
+            "properties": {
+                "egrid_ID": "383",
+                "plant_name": "Saddle Mountain Solar I",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.286,
+                "nameplate_cap_MW": 15.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.430278,
+                    33.035556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "384",
+                "plant_name": "Sandstone Solar",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 45.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.7503,
+                    33.3325
+                ]
+            },
+            "properties": {
+                "egrid_ID": "385",
+                "plant_name": "Santan",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.241,
+                "nameplate_cap_MW": 1326.0,
+                "co2_emission": 1162500.5771442,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.95594,
+                    32.922294
+                ]
+            },
+            "properties": {
+                "egrid_ID": "386",
+                "plant_name": "Solana Generating Station",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.246,
+                "nameplate_cap_MW": 280.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.781064,
+                    33.466477
+                ]
+            },
+            "properties": {
+                "egrid_ID": "387",
+                "plant_name": "South Consolidated",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 1.4,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.5317,
+                    34.8678
+                ]
+            },
+            "properties": {
+                "egrid_ID": "388",
+                "plant_name": "South Point Energy Center, LLC",
+                "state_name": "AZ",
+                "county_name": "Mohave",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.178,
+                "nameplate_cap_MW": 708.0,
+                "co2_emission": 513571.729599958,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.1639,
+                    34.3186
+                ]
+            },
+            "properties": {
+                "egrid_ID": "389",
+                "plant_name": "Springerville Generating Station",
+                "state_name": "AZ",
+                "county_name": "Apache",
+                "primary_fuel": "SUB",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.552,
+                "nameplate_cap_MW": 2179.2,
+                "co2_emission": 10962979.6769999,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.536,
+                    33.5661
+                ]
+            },
+            "properties": {
+                "egrid_ID": "391",
+                "plant_name": "Stewart Mountain",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.161,
+                "nameplate_cap_MW": 13.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.5899,
+                    32.9285
+                ]
+            },
+            "properties": {
+                "egrid_ID": "392",
+                "plant_name": "Sundance Power Plant",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.009,
+                "nameplate_cap_MW": 695.0,
+                "co2_emission": 36848.9063086651,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.815696,
+                    32.097884
+                ]
+            },
+            "properties": {
+                "egrid_ID": "394",
+                "plant_name": "Tech Park Solar",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.322,
+                "nameplate_cap_MW": 5.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.8172,
+                    33.4833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "395",
+                "plant_name": "Tri Cities",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.468,
+                "nameplate_cap_MW": 5.0,
+                "co2_emission": 0.000379442830308108,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.8106,
+                    32.096973
+                ]
+            },
+            "properties": {
+                "egrid_ID": "396",
+                "plant_name": "UASTP I",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.265,
+                "nameplate_cap_MW": 1.2,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.820319,
+                    32.103471
+                ]
+            },
+            "properties": {
+                "egrid_ID": "397",
+                "plant_name": "UASTP II",
+                "state_name": "AZ",
+                "county_name": "Pima",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.238,
+                "nameplate_cap_MW": 4.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.738611,
+                    32.936944
+                ]
+            },
+            "properties": {
+                "egrid_ID": "398",
+                "plant_name": "Union HS at Casa Grande",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.239,
+                "nameplate_cap_MW": 1.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.852608,
+                    32.578011
+                ]
+            },
+            "properties": {
+                "egrid_ID": "399",
+                "plant_name": "University of Arizona - Biosphere 2",
+                "state_name": "AZ",
+                "county_name": "PINAL",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.002,
+                "nameplate_cap_MW": 3.1,
+                "co2_emission": 65.6420005555654,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.931343,
+                    31.363472
+                ]
+            },
+            "properties": {
+                "egrid_ID": "400",
+                "plant_name": "Valencia",
+                "state_name": "AZ",
+                "county_name": "Santa Cruz",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.001,
+                "nameplate_cap_MW": 108.0,
+                "co2_emission": 599.878761688919,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.713056,
+                    32.891389
+                ]
+            },
+            "properties": {
+                "egrid_ID": "402",
+                "plant_name": "Vista Grande HS at Casa Grande",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.183,
+                "nameplate_cap_MW": 1.8,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.2714,
+                    33.8447
+                ]
+            },
+            "properties": {
+                "egrid_ID": "403",
+                "plant_name": "Waddell",
+                "state_name": "AZ",
+                "county_name": "Maricopa",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.089,
+                "nameplate_cap_MW": 40.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.771903,
+                    32.869072
+                ]
+            },
+            "properties": {
+                "egrid_ID": "404",
+                "plant_name": "Walmart Casa Grande",
+                "state_name": "AZ",
+                "county_name": "Pinal",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.189,
+                "nameplate_cap_MW": 2.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.289979,
+                    34.093006
+                ]
+            },
+            "properties": {
+                "egrid_ID": "405",
+                "plant_name": "Western Renewable Energy",
+                "state_name": "AZ",
+                "county_name": "Apache",
+                "primary_fuel": "WDS",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 3.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.7106,
+                    32.7214
+                ]
+            },
+            "properties": {
+                "egrid_ID": "406",
+                "plant_name": "Yucca Power Plant",
+                "state_name": "AZ",
+                "county_name": "Yuma",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.093,
+                "nameplate_cap_MW": 425.0,
+                "co2_emission": 246953.760525089,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.654053,
+                    32.728822
+                ]
+            },
+            "properties": {
+                "egrid_ID": "407",
+                "plant_name": "Yuma Cogeneration Associates",
+                "state_name": "AZ",
+                "county_name": "Yuma",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.113,
+                "nameplate_cap_MW": 62.6,
+                "co2_emission": 25956.9638516689,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3372,
+                    35.1011
+                ]
+            },
+            "properties": {
+                "egrid_ID": "414",
+                "plant_name": "85 A",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.136,
+                "nameplate_cap_MW": 14.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3372,
+                    35.1011
+                ]
+            },
+            "properties": {
+                "egrid_ID": "415",
+                "plant_name": "85 B",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.12,
+                "nameplate_cap_MW": 21.2,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.504724,
+                    37.15105
+                ]
+            },
+            "properties": {
+                "egrid_ID": "416",
+                "plant_name": "A G Wishon",
+                "state_name": "CA",
+                "county_name": "Madera",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.059,
+                "nameplate_cap_MW": 12.8,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.105556,
+                    35.169722
+                ]
+            },
+            "properties": {
+                "egrid_ID": "417",
+                "plant_name": "ABEC Bidart-Old River LLC",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "OTH",
+                "fossil_fuel": "OTHF",
+                "capacity_factor": 0.457,
+                "nameplate_cap_MW": 2.0,
+                "co2_emission": 5.17511691734463,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.383584,
+                    35.765767
+                ]
+            },
+            "properties": {
+                "egrid_ID": "418",
+                "plant_name": "ACE Cogeneration Facility",
+                "state_name": "CA",
+                "county_name": "San Bernardino",
+                "primary_fuel": "BIT",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.35,
+                "nameplate_cap_MW": 108.0,
+                "co2_emission": 488678.192036094,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.435277,
+                    34.550833
+                ]
+            },
+            "properties": {
+                "egrid_ID": "420",
+                "plant_name": "Adelanto Solar Project",
+                "state_name": "CA",
+                "county_name": "San Bernardino",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.228,
+                "nameplate_cap_MW": 10.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.893056,
+                    37.330556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "422",
+                "plant_name": "Adobe San Jose",
+                "state_name": "CA",
+                "county_name": "Santa Clara",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.728,
+                "nameplate_cap_MW": 1.2,
+                "co2_emission": 3.61100283955626,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.859952,
+                    35.953293
+                ]
+            },
+            "properties": {
+                "egrid_ID": "423",
+                "plant_name": "Aera San Ardo Cogen Facility",
+                "state_name": "CA",
+                "county_name": "MONTEREY",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.922,
+                "nameplate_cap_MW": 6.2,
+                "co2_emission": 15725.7440645764,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6864,
+                    35.4292
+                ]
+            },
+            "properties": {
+                "egrid_ID": "424",
+                "plant_name": "Aera South Belridge Cogen Facility",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 9.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.162879,
+                    38.613508
+                ]
+            },
+            "properties": {
+                "egrid_ID": "425",
+                "plant_name": "Aerojet I",
+                "state_name": "CA",
+                "county_name": "Sacramento",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.243,
+                "nameplate_cap_MW": 3.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.1703,
+                    38.6086
+                ]
+            },
+            "properties": {
+                "egrid_ID": "426",
+                "plant_name": "Aerojet II",
+                "state_name": "CA",
+                "county_name": "Sacramento",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.179,
+                "nameplate_cap_MW": 2.7,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1009,
+                    33.7688
+                ]
+            },
+            "properties": {
+                "egrid_ID": "428",
+                "plant_name": "AES Alamitos",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.076,
+                "nameplate_cap_MW": 2055.0,
+                "co2_emission": 927000.902470943,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.395,
+                    33.8504
+                ]
+            },
+            "properties": {
+                "egrid_ID": "430",
+                "plant_name": "AES Redondo Beach",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.022,
+                "nameplate_cap_MW": 1316.4,
+                "co2_emission": 195600.021454523,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.9272,
+                    37.4058
+                ]
+            },
+            "properties": {
+                "egrid_ID": "431",
+                "plant_name": "Agnews Power Plant",
+                "state_name": "CA",
+                "county_name": "Santa Clara",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.056,
+                "nameplate_cap_MW": 32.0,
+                "co2_emission": 8649.97536993598,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.3603,
+                    34.0414
+                ]
+            },
+            "properties": {
+                "egrid_ID": "432",
+                "plant_name": "Agua Mansa Power",
+                "state_name": "CA",
+                "county_name": "San Bernardino",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.045,
+                "nameplate_cap_MW": 60.5,
+                "co2_emission": 14525.3829287113,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.881,
+                    38.8339
+                ]
+            },
+            "properties": {
+                "egrid_ID": "433",
+                "plant_name": "Aidlin Geothermal Power Plant",
+                "state_name": "CA",
+                "county_name": "Sonoma",
+                "primary_fuel": "GEO",
+                "fossil_fuel": "GEOTHERMAL",
+                "capacity_factor": 0.638,
+                "nameplate_cap_MW": 25.0,
+                "co2_emission": 17287.268,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.6867,
+                    34.8158
+                ]
+            },
+            "properties": {
+                "egrid_ID": "435",
+                "plant_name": "Alamo",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.112,
+                "nameplate_cap_MW": 19.6,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.243333,
+                    35.126111
+                ]
+            },
+            "properties": {
+                "egrid_ID": "438",
+                "plant_name": "Algonquin SKIC20 Solar LLC",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 20.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.985,
+                    37.5744
+                ]
+            },
+            "properties": {
+                "egrid_ID": "440",
+                "plant_name": "Almond Power Plant",
+                "state_name": "CA",
+                "county_name": "STANISLAUS",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.111,
+                "nameplate_cap_MW": 223.5,
+                "co2_emission": 136370.597843366,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.435278,
+                    35.898333
+                ]
+            },
+            "properties": {
+                "egrid_ID": "441",
+                "plant_name": "Alpaugh 50",
+                "state_name": "CA",
+                "county_name": "Tulare",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.304,
+                "nameplate_cap_MW": 50.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.442778,
+                    35.9025
+                ]
+            },
+            "properties": {
+                "egrid_ID": "442",
+                "plant_name": "Alpaugh North",
+                "state_name": "CA",
+                "county_name": "Tulare",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.306,
+                "nameplate_cap_MW": 20.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.5047,
+                    34.7892
+                ]
+            },
+            "properties": {
+                "egrid_ID": "443",
+                "plant_name": "Alpine Solar",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.144,
+                "nameplate_cap_MW": 132.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353422,
+                    35.033725
+                ]
+            },
+            "properties": {
+                "egrid_ID": "446",
+                "plant_name": "Alta Wind Energy Center I",
+                "state_name": "CA",
+                "county_name": "KERN",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.307,
+                "nameplate_cap_MW": 150.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.295278,
+                    35.023889
+                ]
+            },
+            "properties": {
+                "egrid_ID": "447",
+                "plant_name": "Alta Wind Energy Center II",
+                "state_name": "CA",
+                "county_name": "KERN",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.25,
+                "nameplate_cap_MW": 150.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.295278,
+                    35.023889
+                ]
+            },
+            "properties": {
+                "egrid_ID": "448",
+                "plant_name": "Alta Wind Energy Center III",
+                "state_name": "CA",
+                "county_name": "KERN",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.266,
+                "nameplate_cap_MW": 150.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.242222,
+                    35.008611
+                ]
+            },
+            "properties": {
+                "egrid_ID": "449",
+                "plant_name": "Alta Wind Energy Center IV",
+                "state_name": "CA",
+                "county_name": "KERN",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.188,
+                "nameplate_cap_MW": 102.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.242222,
+                    35.008611
+                ]
+            },
+            "properties": {
+                "egrid_ID": "450",
+                "plant_name": "Alta Wind Energy Center V",
+                "state_name": "CA",
+                "county_name": "KERN",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.183,
+                "nameplate_cap_MW": 168.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.39,
+                    35.065
+                ]
+            },
+            "properties": {
+                "egrid_ID": "453",
+                "plant_name": "Alta Wind XI",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.317,
+                "nameplate_cap_MW": 90.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.649866,
+                    37.749308
+                ]
+            },
+            "properties": {
+                "egrid_ID": "454",
+                "plant_name": "Altamont Gas Recovery",
+                "state_name": "CA",
+                "county_name": "Alameda",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.691,
+                "nameplate_cap_MW": 8.6,
+                "co2_emission": 0.000323229272908065,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.4322,
+                    37.7392
+                ]
+            },
+            "properties": {
+                "egrid_ID": "455",
+                "plant_name": "Altamont Midway Ltd",
+                "state_name": "CA",
+                "county_name": "San Joaquin",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.097,
+                "nameplate_cap_MW": 10.9,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6516,
+                    37.7341
+                ]
+            },
+            "properties": {
+                "egrid_ID": "456",
+                "plant_name": "Altamont Pass Windplant",
+                "state_name": "CA",
+                "county_name": "Alameda",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.117,
+                "nameplate_cap_MW": 332.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.5364,
+                    33.9603
+                ]
+            },
+            "properties": {
+                "egrid_ID": "457",
+                "plant_name": "Altech III",
+                "state_name": "CA",
+                "county_name": "Riverside",
+                "primary_fuel": "WND",
+                "fossil_fuel": "WIND",
+                "capacity_factor": 0.172,
+                "nameplate_cap_MW": 25.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.0411,
+                    32.7814
+                ]
+            },
+            "properties": {
+                "egrid_ID": "458",
+                "plant_name": "Alvarado Hydro Facility",
+                "state_name": "CA",
+                "county_name": "San Diego",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 2.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.245839,
+                    34.088408
+                ]
+            },
+            "properties": {
+                "egrid_ID": "459",
+                "plant_name": "Amazon San Bernardino",
+                "state_name": "CA",
+                "county_name": "San Bernardino",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.083,
+                "nameplate_cap_MW": 1.1,
+                "co2_emission": 0.300988553590011,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.73,
+                    39.674
+                ]
+            },
+            "properties": {
+                "egrid_ID": "461",
+                "plant_name": "Ameresco Butte County",
+                "state_name": "CA",
+                "county_name": "Butte",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.788,
+                "nameplate_cap_MW": 2.3,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.184167,
+                    37.833056
+                ]
+            },
+            "properties": {
+                "egrid_ID": "463",
+                "plant_name": "Ameresco Forward",
+                "state_name": "CA",
+                "county_name": "San Joaquin",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.494,
+                "nameplate_cap_MW": 4.4,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.408611,
+                    36.534167
+                ]
+            },
+            "properties": {
+                "egrid_ID": "464",
+                "plant_name": "Ameresco Johnson Canyon",
+                "state_name": "CA",
+                "county_name": "Monterey",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.639,
+                "nameplate_cap_MW": 1.4,
+                "co2_emission": 0.000497920813359087,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4,
+                    37.5
+                ]
+            },
+            "properties": {
+                "egrid_ID": "466",
+                "plant_name": "Ameresco Ox Mountain",
+                "state_name": "CA",
+                "county_name": "San Mateo",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.892,
+                "nameplate_cap_MW": 11.4,
+                "co2_emission": 0.000189885300642345,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.929722,
+                    38.029722
+                ]
+            },
+            "properties": {
+                "egrid_ID": "467",
+                "plant_name": "Ameresco San Joaquin",
+                "state_name": "CA",
+                "county_name": "San Joaquin",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.535,
+                "nameplate_cap_MW": 4.4,
+                "co2_emission": 0.000903498914340162,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8156,
+                    36.9178
+                ]
+            },
+            "properties": {
+                "egrid_ID": "468",
+                "plant_name": "Ameresco Santa Cruz Energy",
+                "state_name": "CA",
+                "county_name": "Santa Cruz",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.667,
+                "nameplate_cap_MW": 3.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.728889,
+                    37.754444
+                ]
+            },
+            "properties": {
+                "egrid_ID": "469",
+                "plant_name": "Ameresco Vasco Road",
+                "state_name": "CA",
+                "county_name": "Alameda",
+                "primary_fuel": "LFG",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.786,
+                "nameplate_cap_MW": 4.4,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.248504,
+                    37.106668
+                ]
+            },
+            "properties": {
+                "egrid_ID": "470",
+                "plant_name": "Ampersand Chowchilla Biomass LLC",
+                "state_name": "CA",
+                "county_name": "Madera",
+                "primary_fuel": "WDS",
+                "fossil_fuel": "BIOMASS",
+                "capacity_factor": 0.656,
+                "nameplate_cap_MW": 12.5,
+                "co2_emission": 3255.37678474997,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.919722,
+                    33.8025
+                ]
+            },
+            "properties": {
+                "egrid_ID": "472",
+                "plant_name": "Anaheim Solar Energy Plant",
+                "state_name": "CA",
+                "county_name": "Orange",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.065,
+                "nameplate_cap_MW": 2.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.3833,
+                    35.765
+                ]
+            },
+            "properties": {
+                "egrid_ID": "478",
+                "plant_name": "Argus Cogen Plant",
+                "state_name": "CA",
+                "county_name": "San Bernardino",
+                "primary_fuel": "BIT",
+                "fossil_fuel": "COAL",
+                "capacity_factor": 0.578,
+                "nameplate_cap_MW": 62.5,
+                "co2_emission": 180464.115508519,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.051111,
+                    34.655
+                ]
+            },
+            "properties": {
+                "egrid_ID": "479",
+                "plant_name": "Arrache 4006",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.278,
+                "nameplate_cap_MW": 2.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.051944,
+                    34.650556
+                ]
+            },
+            "properties": {
+                "egrid_ID": "480",
+                "plant_name": "Arrache 4013",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.244,
+                "nameplate_cap_MW": 1.5,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.061111,
+                    34.647778
+                ]
+            },
+            "properties": {
+                "egrid_ID": "481",
+                "plant_name": "Arrache 8083",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.331,
+                "nameplate_cap_MW": 4.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.975278,
+                    38.761389
+                ]
+            },
+            "properties": {
+                "egrid_ID": "483",
+                "plant_name": "ASTI",
+                "state_name": "CA",
+                "county_name": "Sonoma",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.165,
+                "nameplate_cap_MW": 1.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2,
+                    35.5667
+                ]
+            },
+            "properties": {
+                "egrid_ID": "486",
+                "plant_name": "Ausra Kimberlina Solar Generation",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.0,
+                "nameplate_cap_MW": 5.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.42444,
+                    34.780278
+                ]
+            },
+            "properties": {
+                "egrid_ID": "487",
+                "plant_name": "AV Solar Ranch One",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.11,
+                "nameplate_cap_MW": 253.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.11,
+                    35.989722
+                ]
+            },
+            "properties": {
+                "egrid_ID": "488",
+                "plant_name": "Avenal Park",
+                "state_name": "CA",
+                "county_name": "KINGS",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.243,
+                "nameplate_cap_MW": 6.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9093,
+                    34.1548
+                ]
+            },
+            "properties": {
+                "egrid_ID": "489",
+                "plant_name": "Azusa",
+                "state_name": "CA",
+                "county_name": "Los Angeles",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": "",
+                "nameplate_cap_MW": 3.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.834793,
+                    33.688721
+                ]
+            },
+            "properties": {
+                "egrid_ID": "490",
+                "plant_name": "B Braun Medical",
+                "state_name": "CA",
+                "county_name": "Orange",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.649,
+                "nameplate_cap_MW": 6.1,
+                "co2_emission": 11337.2704831838,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.029856,
+                    35.483736
+                ]
+            },
+            "properties": {
+                "egrid_ID": "491",
+                "plant_name": "Badger Creek Cogen",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.579,
+                "nameplate_cap_MW": 46.0,
+                "co2_emission": 92066.2738069787,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.96864,
+                    35.411817
+                ]
+            },
+            "properties": {
+                "egrid_ID": "494",
+                "plant_name": "Bakersfield College Solar 01",
+                "state_name": "CA",
+                "county_name": "Kern",
+                "primary_fuel": "SUN",
+                "fossil_fuel": "SOLAR",
+                "capacity_factor": 0.219,
+                "nameplate_cap_MW": 1.1,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.087712,
+                    36.909137
+                ]
+            },
+            "properties": {
+                "egrid_ID": "495",
+                "plant_name": "Balch 1",
+                "state_name": "CA",
+                "county_name": "Fresno",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.163,
+                "nameplate_cap_MW": 31.0,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.087556,
+                    36.908907
+                ]
+            },
+            "properties": {
+                "egrid_ID": "496",
+                "plant_name": "Balch 2",
+                "state_name": "CA",
+                "county_name": "Fresno",
+                "primary_fuel": "WAT",
+                "fossil_fuel": "HYDRO",
+                "capacity_factor": 0.187,
+                "nameplate_cap_MW": 97.2,
+                "co2_emission": 0.0,
+                "availability": "NAIP&LANDSAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9832,
+                    33.8073
+                ]
+            },
+            "properties": {
+                "egrid_ID": "497",
+                "plant_name": "Barre Generating Station",
+                "state_name": "CA",
+                "county_name": "ORANGE",
+                "primary_fuel": "NG",
+                "fossil_fuel": "GAS",
+                "capacity_factor": 0.067,
+                "nameplate_cap_MW": 49.8,
+                "co2_emission": 17983.0918962945,
+                "availability": "NAIP&LANDSAT"
+            }
+        }
+    ]
+}
