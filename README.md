@@ -64,8 +64,8 @@ if __name__ == '__main__':
 4. Run the script, and in Google Earth Engine [code editor](https://code.earthengine.google.com/), right columns -> task -> you can monitor the tasks here.
 ```bash
 # activate whatever environment you may have installed for running the earthengine
-source activate YOUR_ENVS
-python cropPowerPlants.py
+$ source activate YOUR_ENVS
+$ python cropPowerPlants.py
 ```
 After the exporting finishes, these cropped images should be in your Google Drive (Keep an eye on your storage. Download and clear it up regularly. Tasks will fail if there's no enough space in your drive).
 5. Download images into __```/uspp_naip```__ and __```/uspp_landsat```__ EXACTLY.
@@ -75,7 +75,7 @@ After the exporting finishes, these cropped images should be in your Google Driv
 * Output (to the dataset root dir): __/uspp\_naip__ and/or __/uspp\_landsat__
 
 
-### 2.2 Gather Annotstions
+### 2.2 Gather Annotations
 See MTurkAnnotationTool: https://github.com/tn74/MTurkAnnotationTool.
 
 ### 2.3 Binary Labels Creation
@@ -96,11 +96,11 @@ https://github.com/bl166/USPowerPlantDataset/blob/master/make.py
     * Note#2: _If you do not have this folder, annotations will still be generated._<br/>
 2. Another thing that might be useful to do in advance of making the dataset: preprocessing the Landsat8 data.
 ```bash
-matlab -nodisplay -r fixLs
+$ matlab -nodisplay -r fixLs
 ```
 3. Run this script. While the program is running, you can expect some message showing the current status.
 ```bash
-python make.py
+$ python make.py
 ```
 4. Outputs: After the program finishes, you should find the following items shown up/changed in the root directory:<br/>
   * a new folder called __```/annotations```__, in which <br/>
@@ -128,7 +128,7 @@ This code is designed for pixel-based image segmentation. It looks at the window
 #### Code & documentation
 https://github.com/bl166/USPowerPlantDataset/blob/master/classify_sample.py
 ```{r,engine='bash',code_cls}
-python classify_sample.py
+$ python classify_sample.py
 ```
 
 ### 3.1 Cross-validation Results
