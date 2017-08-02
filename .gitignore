@@ -2,4 +2,4 @@
 *.gz
 
 # ignore obsolete annotations
-accepted_ann_json_2*.txt
+*.txt
