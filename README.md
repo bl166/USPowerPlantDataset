@@ -31,16 +31,18 @@ Annotation tool available here: https://github.com/tn74/MTurkAnnotationTool;
 
 9. ```fixLs.m```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
 
-10. ```make.py```: constructs the dataset;
+10. ```getAllAcceptedCondensed.py```: generate a condensed annotation file from all accepted annotations with each image taking one line (NOTE: This script is NOT runable unless you have all accepted annotations, but not to worry because we have provided its output as *accepted\_ann\_json.txt*);
 
-11. __```classify_sample.py```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
+11. ```make.py```: constructs the dataset;
+
+12. __```classify_sample.py```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
 
 ## 2 &nbsp; Dataset Construction
 ### 2.0 Overview
 This dataset was constructed in three phases:
-1. Download satellite imagery;
-2. Gather annotations of power plants;
-3. Merge accepted annotations and create binary labels.
+* __P1DATAPREP__ (data preparation) - Download satellite imagery;
+* __P2ANNOGEN__ (annotations generation) - Gather annotations of power plants;
+* __P3DATAPROC__ (dataset processing) - Merge accepted annotations, create binary labels, and compile metadata.
 
 ### 2.1 Satellite Imagery Download
 #### Dependencies
@@ -87,32 +89,40 @@ See MTurkAnnotationTool: https://github.com/tn74/MTurkAnnotationTool.
 https://github.com/bl166/USPowerPlantDataset/blob/master/make.py
 
 #### Steps
-1. Items that you should already have before running the script:<br/>
-  * __```/uspp_naip```__: NAIP data with unprocessed images' names being ```ID.tif```;<br/>
-  * __```egrid_2014_subset.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
-  * __```accepted_ann_json.txt```__: annotations from the MTurkers.<br/>
-    * Note#1: _Items mentioned above should be directly under the root directory and named exactly as quoted. Otherwise the construction will fail._<br/>
-  * (Optional, but strongly recommended!) __```/uspp_landsat```__: Landsat8 data with unprocessed images' names being ```ID.tif```.<br/>
-    * Note#2: _If you do not have this folder, annotations will still be generated._<br/>
-2. Another thing that might be useful to do in advance of making the dataset: preprocessing the Landsat8 data.
+* __1\. Items that you should already have before running the script:__<br/>
+* __```/uspp_naip```__: NAIP data with unprocessed images' names being ```ID.tif```;<br/>
+* __```egrid_2014_subset.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
+* __```accepted_ann_json.txt```__: annotations from the MTurkers.<br/>
+
+Note: _Items mentioned above should be directly under the root directory and named exactly as quoted. Otherwise the construction will fail._<br/>
+* (Optional, but strongly recommended!) __```/uspp_landsat```__: Landsat8 data with unprocessed images' names being ```ID.tif```.<br/>
+
+NOTE: _If you do not have this folder, annotations will still be generated._<br/>
+* __2\. Preprocessing the Landsat8 data.__<br/>
+You can do this after the dataset is constructed, but we recommend that you do it beforehand.
 ```bash
 $ matlab -nodisplay -r fixLs
 ```
-3. Run this script. While the program is running, you can expect some message showing the current status.
+* __3\. Run this script.__ <br/>
+While the program is running, you can expect some message showing the current status.
 ```bash
 $ python make.py
 ```
-4. Outputs: After the program finishes, you should find the following items shown up/changed in the root directory:<br/>
-  * a new folder called __```/annotations```__, in which <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) __```/confidence```__ has all annotated polygons converted into binary polygons masks and added up; <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii) __```/binary```__ has confidence masks binarized by max voting. <br/>
-    * Note#3: _The binary values are 0 and 255, therefore you should normalize it to 0 and 1 at the actual practice._<br/>
-  * Images in ```uspp_naip``` (and ```uspp_landsat``` if applicable) that can be corresponded to the "accepted_ann_json.txt"
-are __renamed__ (if annotations are found valid) or __moved__ to ```/exceptions``` (if annotations contain only empty content).
-    * Note#4 (new name convention): *DataType\_egridUniqueID\_State\_Type.tif*<br/>
+* __4\. Outputs:__<br/>
+After the program finishes, you should find the following items shown up/changed in the root directory:<br/>
+* A new folder called __```/annotations```__, in which
+	* __```/confidence```__ has all annotated polygons converted into binary polygons masks and added up;
+	* __```/binary```__ has confidence masks binarized by max voting. <br/>
+
+NOTE: _The binary values are 0 and 255, therefore you should normalize it to 0 and 1 at the actual practice._<br/>
+* Images in ```uspp_naip``` (and ```uspp_landsat``` if applicable) that can be corresponded to the "accepted_ann_json.txt"
+are __renamed__ (if the annotation is found as a valid power plants) or __moved__ to ```/exceptions``` (if annotations contain only empty content).
+
+NOTE (new name convention): *DataType\_egridUniqueID\_State\_Type.tif*<br/>
   * Finally, a new file named ```uspp_metadata.geojson``` is generated. It contains all annotated power plants' metadata.
 
-5. In case that the process is interrupted, you can re-run it at the spot. All images that are already processed will be untouched, and new power plants will be added to the end of the metadata.
+* __5\. In case that the process is interrupted, you can re-run it at the spot.__ <br/>
+All images that are already processed will NOT be revisited; new power plants will be added to the end of the metadata.
 
 #### Summary
 * Input: __/uspp\_naip__, __accepted\_ann\_json.txt__, __/uspp\_landsat__ (optional), __/uspp\_metadata.geojson__ (optional)
