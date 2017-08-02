@@ -9,9 +9,9 @@ Data sources:
 
 Items in _Italics_ are related with construction, not to worry for classification concerns; in __bold__ are respectively images, labels, register, and sample code for image segmentation/pixel-wise classification; and there are some ```useful scripts``` for making and testing this dataset. Starred* Items are outputs to expect as the results of dataset construction.
 
-1. _/uspp_naip_: high-resolution power plant images (~1115x1115 pix, 5M/ea), used for gathering annotations;
+1. _/uspp\_naip_: high-resolution power plant images (~1115x1115 pix, 5M/ea), used for gathering annotations;
 
-2. __/uspp_landsat__: medium-resolution power plant images (~75x75 pix, 70K/ea), to be used for classification
+2. __/uspp\_landsat__: medium-resolution power plant images (~75x75 pix, 70K/ea), to be used for classification
 
 3. __/annotations__*: confidence and binary masks denoting the outline of power plants. Meaning of pixel values in sub-folders: <br/>
 a) /confidence: number of annotators bounding it within a power plant<br/>
@@ -19,23 +19,23 @@ b) /binary: whether or not more than half of all annotators agree that it is par
 
 4. _/exceptions_*: instances with no valid annotations (most likely no visible power plants; or in a very small chance, all of three annotations were rejected);
 
-5. __uspp_metadata.geogson__*: geographic location, unique egrid id, plant name, state and county name, primary fuel, fossil fuel category, capacity factor, nameplate capacity, and CO<sub>2</sub> emission data;<br/>
+5. __uspp\_metadata.geogson__*: geographic location, unique egrid id, plant name, state and county name, primary fuel, fossil fuel category, capacity factor, nameplate capacity, and CO<sub>2</sub> emission data;<br/>
 Visualization available here: https://github.com/bl166/USPowerPlantDataset/blob/master/uspp_metadata.geojson;
 
 6. _accepted\_ann\_json.txt_: accepted annotations collected from Amazon Mechanical Turk;<br/>
 Annotation tool available here: https://github.com/tn74/MTurkAnnotationTool;
 
-7. _egrid2014_data_v2_PLNT14.xlsx_: A subset of the Egrid document which contains US power plant locations and other information;
+7. _egrid2014\_data\_v2_PLNT14.xlsx_: A subset of the Egrid document which contains US power plant locations and other information;
 
-8. ```cropPowerPlants.py```: exports satellite imagery from Google Earth Engine;
+8. ```cropPowerPlants(.py)```: exports satellite imagery from Google Earth Engine;
 
-9. ```fixLs.m```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
+9. ```fixLs(.m)```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
 
-10. ```getAllAcceptedCondensed.py```: generate a condensed annotation file from all accepted annotations with each image taking one line (NOTE: This script is NOT runable unless you have all accepted annotations, but not to worry because we have provided its output as *accepted\_ann\_json.txt*);
+10. ```getAllAcceptedCondensed(.py)```: generate a condensed annotation file from all accepted annotations with each image taking one line (NOTE: This script is NOT runable unless you have all accepted annotations, but not to worry because we have provided its output as *accepted\_ann\_json.txt*);
 
-11. ```make.py```: constructs the dataset;
+11. ```make(.py)```: constructs the dataset;
 
-12. __```classify_sample.py```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
+12. __```classify_sample(.py)```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
 
 ## 2 &nbsp; Dataset Construction
 ### 2.0 Overview
@@ -57,7 +57,8 @@ https://github.com/bl166/USPowerPlantDataset/blob/master/P1DATAPREP_cropPowerPla
 1. [Sign up](https://earthengine.google.com/signup/) for Google Earth Engine. To export data you must sign up as a developer.
 2. Install the [Python API](https://developers.google.com/earth-engine/python_install).
 Follow instructions in the link.
-3. In  [cropPowerPlants.py](https://github.com/bl166/USPowerPlantDataset/blob/master/cropPowerPlants.py), on _line\#100 and 101_ define your indices, from which collection to export, and in what order you want the exporting to take place.
+3. In  [cropPowerPlants.py](https://github.com/bl166/USPowerPlantDataset/blob/master/P1DATAPREP_cropPowerPlants.py
+), on _line\#100 and 101_ define your indices, from which collection to export, and in what order you want the exporting to take place.
 ```Python
 if __name__ == '__main__':
 	id_start,id_end = (300,500) # include id_start, exclude id_end
@@ -67,7 +68,7 @@ if __name__ == '__main__':
 ```bash
 # activate whatever environment you may have installed for running the earthengine
 $ source activate YOUR_ENVS
-$ python cropPowerPlants.py
+$ python P1DATAPREP_cropPowerPlants.py
 ```
 After the exporting finishes, these cropped images should be in your Google Drive (Keep an eye on your storage. Download and clear it up regularly. Tasks will fail if there's no enough space in your drive).
 5. Download images into __```/uspp_naip```__ and __```/uspp_landsat```__ EXACTLY.
@@ -81,6 +82,8 @@ After the exporting finishes, these cropped images should be in your Google Driv
 See MTurkAnnotationTool: https://github.com/tn74/MTurkAnnotationTool.
 
 ### 2.3 Binary Labels Creation
+NOTE: To try this section yourself, please remove all of 4 folders and the geojson file. Download the raw data [here](https://drive.google.com/open?id=0ByBRkdMUrhrYazNMYW1JblZzb0E). Extract all items to this repo. Then follow the steps below:
+
 #### Dependencies
 + ```Python 3.X```
 + Packages: ```os, sys, json, numpy, PIL, xlrd```
@@ -91,7 +94,7 @@ https://github.com/bl166/USPowerPlantDataset/blob/master/P3DATAPROC_make.py
 #### Steps
 * __1\. Items that you should already have before running the script:__<br/>
 * __```/uspp_naip```__: NAIP data with unprocessed images' names being ```ID.tif```;<br/>
-* __```egrid_2014_subset.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
+* __```egrid2014\_data\_v2\_PLNT14.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
 * __```accepted_ann_json.txt```__: annotations from the MTurkers.<br/>
 
 Note: _Items mentioned above should be directly under the root directory and named exactly as quoted. Otherwise the construction will fail._<br/>
@@ -106,7 +109,7 @@ $ matlab -nodisplay -r fixLs
 * __3\. Run this script.__ <br/>
 While the program is running, you can expect some message showing the current status.
 ```bash
-$ python make.py
+$ python P3DATAPROC_make.py
 ```
 * __4\. Outputs:__<br/>
 After the program finishes, you should find the following items shown up/changed in the root directory:<br/>
