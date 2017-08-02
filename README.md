@@ -51,7 +51,7 @@ This dataset was constructed in three phases:
 + Packages: ```ee, numpy, xlrd```
 
 #### Code & documentation
-https://github.com/bl166/USPowerPlantDataset/blob/master/cropPowerPlants.py
+https://github.com/bl166/USPowerPlantDataset/blob/master/P1DATAPREP_cropPowerPlants.py
 
 #### Steps
 1. [Sign up](https://earthengine.google.com/signup/) for Google Earth Engine. To export data you must sign up as a developer.
@@ -86,7 +86,7 @@ See MTurkAnnotationTool: https://github.com/tn74/MTurkAnnotationTool.
 + Packages: ```os, sys, json, numpy, PIL, xlrd```
 
 #### Code & documentation
-https://github.com/bl166/USPowerPlantDataset/blob/master/make.py
+https://github.com/bl166/USPowerPlantDataset/blob/master/P3DATAPROC_make.py
 
 #### Steps
 * __1\. Items that you should already have before running the script:__<br/>
@@ -136,7 +136,7 @@ All images that are already processed will NOT be revisited; new power plants wi
 This code is designed for pixel-based image segmentation. It looks at the window centered at each pixel and decides whether or not this pixel belongs to the object of interest.
 
 #### Code & documentation
-https://github.com/bl166/USPowerPlantDataset/blob/master/classify_sample.py
+https://github.com/bl166/USPowerPlantDataset/blob/master/P4TESTCLSFR_classify_sample.py
 ```{r,engine='bash',code_cls}
 $ python classify_sample.py
 ```
@@ -154,4 +154,4 @@ $ python classify_sample.py
 * Boning Li
 * Trishul Nagenalli
 
-Project: [_Detecting Electricity Access from Aerial Imagery_](http://bigdata.duke.edu/projects/electricity-access-developing-countries-aerial-imagery), Duke Data+ 2017
+Project: [_Detecting Electricity Access from Aerial Imagery](http://bigdata.duke.edu/projects/electricity-access-developing-countries-aerial-imagery), Duke Data+ 2017
