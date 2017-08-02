@@ -29,11 +29,6 @@ import sys
 import os
 import re
 
-class Curve: # ROC
-    auc = 0
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
 
 class Curve:  # ROC
     auc = 0
@@ -57,27 +52,10 @@ class Curve:  # ROC
 
 
 class Observations:
-    targets={
-        'root_dir': os.path.dirname(os.path.realpath(__file__)),
-        'img_dir':  os.path.join(os.path.dirname(os.path.realpath(__file__)),'uspp_landsat'),
-        'lab_dir':  os.path.join(os.path.dirname(os.path.realpath(__file__)),'annotations'),
-        'feat_file': os.path.join(os.path.dirname(os.path.realpath(__file__)),'uspp_metadata.geojson')
-    }
-    X=[]
-    y=[]
-    id_list = []
-    nElementsEach = []
-    existence = [True,[]]
-    x0, x1 = subfig.get_xlim()
-    y0, y1 = subfig.get_ylim()
-    subfig.set_aspect((x1 - x0) / (y1 - y0))
-
-
-class Observations:
     targets = {
         'root_dir': os.path.dirname(os.path.realpath(__file__)),
         'img_dir':  os.path.join(os.path.dirname(os.path.realpath(__file__)), 'uspp_landsat'),
-        'lab_dir':  os.path.join(os.path.dirname(os.path.realpath(__file__)), 'annotations'),
+        'lab_dir':  os.path.join(os.path.dirname(os.path.realpath(__file__)), 'annotations/binary'),
         'feat_file': os.path.join(os.path.dirname(os.path.realpath(__file__)), 'uspp_metadata.geojson')
     }
     X = []
@@ -91,14 +69,6 @@ class Observations:
     scr = []
     sizes = []
     method = 'lda'
-
-
-    def __init__(self,*args):
-        # check if everything exist to proceed
-        self.checkExist()
-        if not self.existence[0]:
-            print('Cannot find the following item(s), please check:\n%s'%'\n'.join(map(str,self.existence[1])))
-
 
     def __init__(self, *args):
         # check if everything exist to proceed
@@ -150,13 +120,10 @@ class Observations:
             self.id_list.append(ob_temp['properties']['egrid_ID'])
 
             # construct file names and load
-            img_name = 'ls8_' + self.id_list[-1] + '_' + ob_temp['properties']['state_name'] + \
-                '_' + ob_temp['properties']['primary_fuel'] + '.tif'
-            lab_name = 'labels' + self.id_list[-1] + '.png'
-            img = np.array(Image.open(os.path.join(
-                self.targets['img_dir'], img_name)))
-            lab = np.array(np.array(Image.open(os.path.join(
-                self.targets['lab_dir'], lab_name)).resize(img.shape[:2][::-1])) > 0)
+            img_name = 'ls8_' + self.id_list[-1] + '_' + ob_temp['properties']['state_name'] + '_' + ob_temp['properties']['primary_fuel'] + '.tif'
+            lab_name = 'bilabels_' + self.id_list[-1] + '.png'
+            img = np.array(Image.open(os.path.join(self.targets['img_dir'], img_name)))
+            lab = np.array(np.array(Image.open(os.path.join(self.targets['lab_dir'], lab_name)).resize(img.shape[:2][::-1])) > 0)
 
             self.sizes.append(lab.shape)
 
@@ -170,17 +137,13 @@ class Observations:
             for iChannel in range(0, img.shape[2]):
                 cChannel = np.squeeze(img[:, :, iChannel])
 
-                cChannelMean = (1 / nPixelsInWindow) * \
-                    signal.convolve2d(cChannel, convMask, mode='same')
-                cChannelMeanSquare = (
-                    1 / nPixelsInWindow) * signal.convolve2d(np.square(cChannel), convMask, mode='same')
+                cChannelMean = (1 / nPixelsInWindow) * signal.convolve2d(cChannel, convMask, mode='same')
+                cChannelMeanSquare = (1 / nPixelsInWindow) * signal.convolve2d(np.square(cChannel), convMask, mode='same')
                 cChannelVariance = cChannelMeanSquare - np.square(cChannelMean)
 
                 # Store the features
-                features[:, iChannel] = cChannelMean.reshape(
-                    nPixels, order='C') - np.mean(cChannelMean)       # RGB means: [1,2,3]
-                features[:, iChannel + img.shape[2]] = cChannelVariance.reshape(
-                    nPixels, order='C') - np.mean(cChannelVariance)   # RGB variances: [4,5,6]
+                features[:, iChannel] = cChannelMean.reshape(nPixels, order='C') - np.mean(cChannelMean)       					# RGB means: [1,2,3]
+                features[:, iChannel + img.shape[2]] = cChannelVariance.reshape(nPixels, order='C') - np.mean(cChannelVariance) # RGB variances: [4,5,6]
 
             self.X = np.vstack((self.X, features))
             self.y = np.vstack((self.y, lab.reshape((nPixels, 1), order='C')))
@@ -257,30 +220,6 @@ class Observations:
             # make confidence map
             self.genConfMap(test_img_idx,test_item)
 
-
-    def genConfMap(self,test_img_idx,test_item):
-            fig = plt.figure()
-
-            # display cmap
-            ax1 = fig.add_subplot(133)
-            ax1.imshow(np.reshape([item[1] for item in self.scr],self.sizes[test_img_idx], order='C'))
-            ax1.set_title('Prediction confidence map - '+self.method)
-
-            # display true annotation
-            ax2 = fig.add_subplot(132)
-            ax2.imshow(np.reshape(self.y[self.idx_ts],self.sizes[test_img_idx], order='C'))
-            ax2.set_title('True annotation(s)')
-
-            # display original image
-            ax3 = fig.add_subplot(131)
-            ob = next((item for item in self.obs if item['properties']['egrid_ID'] == str(test_item)))
-            fname = 'ls8_'+ob['properties']['egrid_ID']+'_'+ob['properties']['state_name']+'_'+ob['properties']['primary_fuel']+'.tif'
-            orig_img = Image.open(os.path.join(self.targets['root_dir'],self.targets['img_dir'],fname))
-            ax3.imshow(np.array(orig_img))
-            ax3.set_title('Orignial image, ID='+ob['properties']['egrid_ID'])
-
-            plt.show()
-            self.genConfMap(test_img_idx, test_item)
 
     def genConfMap(self, test_img_idx, test_item):
         fig = plt.figure()

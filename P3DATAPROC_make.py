@@ -35,11 +35,6 @@ Developed for Duke Data+ 2017: Electricity Access
 Jul 30, 2017
 '''
 
-=======
-Duke Data+ 2017: Electricity Access
-Jul 30, 2017
-
-
 import os
 import sys
 import json
@@ -47,11 +42,6 @@ import numpy as np
 from PIL import Image, ImageDraw
 from xlrd import open_workbook
 
-class USPP:
-    def __init__(self,rdir):
-        self.setflag = 1 # default: use both naip and landsat data
-        self.valid = []
-        self.invalid=[]
 
 class USPP:
     def __init__(self, rdir):
@@ -85,17 +75,11 @@ class USPP:
         ann_path_temp = os.path.join(self.targets['root_dir'],self.targets['ann_dir'])
         ann_path_temp_bi = os.path.join(ann_path_temp,self.targets['bi_dir'])
         ann_path_temp_conf = os.path.join(ann_path_temp,self.targets['conf_dir'])
-        ann_path_temp = os.path.join(
-            self.targets['root_dir'], self.targets['ann_dir'])
-        ann_path_temp_bi = os.path.join(ann_path_temp, self.targets['bi_dir'])
-        ann_path_temp_conf = os.path.join(
-            ann_path_temp, self.targets['conf_dir'])
-        if not os.path.exists(ann_path_temp):
-            os.mkdir(ann_path_temp)
-        if not os.path.exists(ann_path_temp_bi):
-            os.mkdir(ann_path_temp_bi)
-        if not os.path.exists(ann_path_temp_conf):
-            os.mkdir(ann_path_temp_conf)
+
+        if not os.path.exists(ann_path_temp): os.mkdir(ann_path_temp)
+        if not os.path.exists(ann_path_temp_bi): os.mkdir(ann_path_temp_bi)
+        if not os.path.exists(ann_path_temp_conf): os.mkdir(ann_path_temp_conf)
+
         # process annotations into masks and save them
         if os.path.isfile(self.targets['update_file']):
             with open(self.targets['update_file']) as f:
@@ -108,6 +92,7 @@ class USPP:
 
     # add detailed info to image data names
     def _rename(self):
+        print('y')
         os.rename(os.path.join(self.targets['root_dir'],self.targets['naip_dir'],self.names['old_name_n']),
                   os.path.join(self.targets['root_dir'],self.targets['naip_dir'],self.names['new_name_n']))
         if self.setflag:
@@ -125,7 +110,6 @@ class USPP:
 
         row = self.egrid.col_values(0).index(pid_int)
         _sname = self.egrid.cell_value(row,1)
-        # _pname = ''.join(self.egrid.cell_value(row,4).split())
         _type = self.egrid.cell_value(row,6)
 
         self.names['old_name_n'] = pid +'.tif'
@@ -135,55 +119,18 @@ class USPP:
 
         if not os.path.isfile(os.path.join(self.targets['root_dir'],
                                             self.targets['naip_dir'],
-                                            self.names['old_name_n'])) or\
+                                            self.names['old_name_n'])) or \
                 (self.setflag and not os.path.isfile(os.path.join(self.targets['root_dir'],
                                                                 self.targets['landsat_dir'],
                                                                 self.names['old_name_l']))):
             print('Warning: ID='+ pid +' missing in landsat data!')
-            self.invalid.append((pid,0)) # because of no image
+            self.invalid.append((pid,0)) 
+            return 0# because of no image
 
-    # add detailed info to image data names
-    def _rename(self):
-        os.rename(os.path.join(self.targets['root_dir'], self.targets['naip_dir'], self.names['old_name_n']),
-                  os.path.join(self.targets['root_dir'], self.targets['naip_dir'], self.names['new_name_n']))
-        if self.setflag:
-            os.rename(os.path.join(self.targets['root_dir'], self.targets['landsat_dir'], self.names['old_name_l']),
-                      os.path.join(self.targets['root_dir'], self.targets['landsat_dir'], self.names['new_name_l']))
+        return 1
 
-    # preparation for rename
-    def _constructNames(self, pid):
-        try:
-            pid_int = int(pid)
-        except:
-            print('Warning: %s is not a valid egrid ID!' % (pid))
-            return -1  # no valid od
-
-        row = self.egrid.col_values(0).index(pid_int)
-        _sname = self.egrid.cell_value(row, 1)
-        # _pname = ''.join(self.egrid.cell_value(row,4).split())
-        _type = self.egrid.cell_value(row, 6)
-
-        self.names['old_name_n'] = pid + '.tif'
-        self.names['old_name_l'] = pid + '.tif'
-        self.names['new_name_n'] = 'naip_' + pid + '_' + _sname + '_' + _type + '.tif'
-        self.names['new_name_l'] = 'ls8_' + pid + '_' + _sname + '_' + _type + '.tif'
-
-        if not os.path.isfile(os.path.join(self.targets['root_dir'],
-                                           self.targets['naip_dir'],
-                                           self.names['old_name_n'])) or\
-                (self.setflag and not os.path.isfile(os.path.join(self.targets['root_dir'],
-                                                                  self.targets['landsat_dir'],
-                                                                  self.names['old_name_l']))):
-            print('Warning: ID=' + pid + ' missing in landsat data!')
-            self.invalid.append((pid, 0))  # because of no image
-
-            self._clearData('rm')
-            return 0     # image does not exist
-        else:
-            return 1     # everything fine
 
     # (re)move images without annotations
-
     def _clearData(self,*option):
         no_ann_fpath=os.path.join(self.targets['root_dir'],self.targets['no_ann_dir'])
         no_ann_naip_fpath = os.path.join(no_ann_fpath,self.targets['naip_dir'])
@@ -216,58 +163,9 @@ class USPP:
                     os.remove(old_path_ls)
                 except: pass
 
-    def _clearData(self, *option):
-        no_ann_fpath = os.path.join(
-            self.targets['root_dir'], self.targets['no_ann_dir'])
-        no_ann_naip_fpath = os.path.join(
-            no_ann_fpath, self.targets['naip_dir'])
-        no_ann_ls_fpath = os.path.join(
-            no_ann_fpath, self.targets['landsat_dir'])
-
-        old_path_naip = os.path.join(
-            self.targets['root_dir'], self.targets['naip_dir'], self.names['old_name_n'])
-        new_path_naip = os.path.join(
-            no_ann_fpath, self.targets['naip_dir'], self.names['old_name_n'])
-
-        old_path_ls = os.path.join(
-            self.targets['root_dir'], self.targets['landsat_dir'], self.names['old_name_l'])
-        new_path_ls = os.path.join(
-            no_ann_fpath, self.targets['landsat_dir'], self.names['old_name_l'])
-
-        if not os.path.exists(no_ann_fpath):
-            os.mkdir(no_ann_fpath)
-        if not os.path.exists(no_ann_naip_fpath):
-            os.mkdir(no_ann_naip_fpath)
-        if not os.path.exists(no_ann_ls_fpath):
-            os.mkdir(no_ann_ls_fpath)
-
-        if option[0] == 'mv':
-        # move the specified files to another folder
-            try:
-                os.rename(old_path_naip, new_path_naip)
-            except:
-                pass
-            if self.setflag:
-                try:
-                    os.rename(old_path_ls, new_path_ls)
-                except:
-                    pass
-        else:
-        # remove the specified files
-            try:
-                os.remove(old_path_naip)
-            except:
-                pass
-            if self.setflag:
-                try:
-                    os.remove(old_path_ls)
-                except:
-                    pass
-
-
     # check if all required data exists
     def _checkExistence(self):
-        ret = 0
+        ret=0
         # check root / files
         if not os.path.exists(self.targets['root_dir']):
             print('Root directory does not exist!')
@@ -287,25 +185,7 @@ class USPP:
             if not os.path.exists(os.path.join(self.targets['root_dir'],self.targets['landsat_dir'])):
                 print('Warning! Landsat data missing or falsely named. They will not be used during the following process. If you do have Landsat data and want to use it, please put them in a folder directly under the root and make sure it\'s named \"uspp_landsat\" and run it again.')
                 self.setflag = 0 # use naip only
-                return ret==0
-
-            ret -= 1
-        else:
-            if not os.path.isfile(os.path.join(self.targets['root_dir'], self.targets['ann_json_file'])):
-                print('Cannot find annotation text!')
-                ret -= 1
-            if not os.path.isfile(os.path.join(self.targets['root_dir'], self.targets['egrid_file'])):
-                print('Cannot find egrid sheet!')
-                ret -= 1
-            # check naip data
-            if not os.path.exists(os.path.join(self.targets['root_dir'], self.targets['naip_dir'])):
-                print('NAIP data directory missing or false named! If you do have NAIP data, please put them in a and make sure it\'s named \"uspp_naip\".')
-                ret -= 1
-            # check landsat data
-            if not os.path.exists(os.path.join(self.targets['root_dir'], self.targets['landsat_dir'])):
-                print('Warning! Landsat data missing or falsely named. They will not be used during the following process. If you do have Landsat data and want to use it, please put them in a folder directly under the root and make sure it\'s named \"uspp_landsat\" and run it again.')
-                self.setflag = 0  # use naip only
-        return ret == 0
+        return ret==0
 
 
     # generate a geojson file which contains the info of all validated power plants
@@ -316,7 +196,6 @@ class USPP:
         }
         with open(self.targets['update_file'], 'w') as output:
             json.dump(compiled,output,sort_keys=False,indent=4)
-            json.dump(compiled, output, sort_keys=False, indent=4)
 
 
     # parse json text files
@@ -327,30 +206,21 @@ class USPP:
         # load egrid file
         self.egrid = open_workbook(os.path.join(self.targets['root_dir'],
                                                 self.targets['egrid_file'])).sheet_by_index(0)
-        self.anntext = open(os.path.join(self.targets['root_dir'],
-                                         self.targets['ann_json_file']), 'r')
-        # load egrid file
-        self.egrid = open_workbook(os.path.join(self.targets['root_dir'],
-                                                self.targets['egrid_file'])).sheet_by_index(0)
+
         count = 0
         while 1:
             try:
                 json_text = self.anntext.readline()
                 ann_temp = json.loads(json_text)
 
-                pid = ann_temp['fileName'].rsplit('/',1)[1][:-4]
-                cn=self._constructNames(pid)
-                if cn!=1:
-                    # did not find the file with this id
-                    count+=1*(cn!=-1)
-
                 pid = ann_temp['fileName'].rsplit('/', 1)[1][:-4]
                 cn = self._constructNames(pid)
+
                 if cn != 1:
                     # did not find the file with this id
                     count += 1 * (cn != -1)
                     continue
-
+                
                 with Image.open(os.path.join(self.targets['root_dir'],
                                              self.targets['naip_dir'],
                                              self.names['old_name_n'])) as img_temp:
@@ -380,33 +250,6 @@ class USPP:
                     self._clearData('mv')
                     count+=1
                     ann_temp['img_size'] = img_temp.size  # (width,height)
-
-                mask = np.zeros(ann_temp['img_size'], dtype=np.uint8)
-                # polygon verticle coordinates
-                poly_verts = ann_temp['objs'][0]['data']
-
-                for ipoly in range(0, len(poly_verts[0])):
-                    xys = [poly_verts[0][ipoly], poly_verts[1][ipoly]]
-                    poly_xys_temp = [(xys[0][i], xys[1][i])
-                                     for i in range(0, len(xys[0]))]
-
-                    img = Image.new('L', ann_temp['img_size'][::-1], 0)
-                    ImageDraw.Draw(img).polygon(
-                        poly_xys_temp, outline=1, fill=1)
-                    mask = mask + np.array(img, dtype=np.uint8)
-
-                mask_conf = np.array(mask)
-                # binarize the mask
-                if not sorted(np.unique(mask)) == sorted([0, 1]):
-                    mask[mask < 2] = 0
-                    mask[mask > 0] = 1
-                mask *= 255
-
-                if np.sum(mask) == 0:
-                    print('Warning: No annotations for ID' + pid)
-                    self.invalid.append((pid, 1))  # because of no annotation
-                    self._clearData('mv')
-                    count += 1
                     continue
 
                 # rename the original images
@@ -416,10 +259,6 @@ class USPP:
                 Image.fromarray(mask).save(os.path.join(self.targets['root_dir'],self.targets['ann_dir'],self.targets['bi_dir'],'bilabels_'+pid+'.png'))
                 Image.fromarray(mask_conf).save(os.path.join(self.targets['root_dir'],self.targets['ann_dir'],self.targets['conf_dir'],'conflabels_'+pid+'.png'))
 
-                Image.fromarray(mask).save(os.path.join(
-                    self.targets['root_dir'], self.targets['ann_dir'], self.targets['bi_dir'], 'bilabels_' + pid + '.png'))
-                Image.fromarray(mask_conf).save(os.path.join(
-                    self.targets['root_dir'], self.targets['ann_dir'], self.targets['conf_dir'], 'conflabels_' + pid + '.png'))
                 self.valid.append(pid)
 
                 # generate geojson
@@ -462,11 +301,8 @@ A total of %d annotation lines with valid egrid IDs were read,
 %d don\'t have image/annotation at all and thus abandoned.
 For further investigation, please find the void ones in "\exceptions",
 with the following indecies:\n'''%(count,len(self.valid),len(self.invalid))
-
-with the following indecies:
                 print(summary)
-                print('%s' %
-                      (', '.join(map(str, [item[0] for item in self.invalid]))))
+                print('%s' %(', '.join(map(str, [item[0] for item in self.invalid]))))
                 break
 
 
