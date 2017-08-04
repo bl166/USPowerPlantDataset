@@ -7,37 +7,35 @@ Data sources:
 
 ## 1 &nbsp; Data Explanation
 
-Items in _Italics_ are related with construction, not to worry for classification concerns; in __bold__ are respectively images, labels, register, and sample code for image segmentation/pixel-wise classification; and there are some ```useful scripts``` for making and testing this dataset. Starred* Items are outputs to expect as the results of dataset construction.
+Items in _Italics_ are primary ingredients for dataset construction; in __bold__ are respectively images, labels, metadata, and sample code for image segmentation/pixel-wise classification. There are also some ```useful scripts``` for making and testing this dataset. Starred* Items are outputs to expect as the results of dataset construction.
 
-1. _/uspp\_naip_: high-resolution power plant images (~1115x1115 pix, 5M/ea), used for gathering annotations;
+1. */uspp\_naip*: high-resolution power plant images (~1115x1115 pix, 5M/ea), used for gathering annotations;
 
 2. __/uspp\_landsat__: medium-resolution power plant images (~75x75 pix, 70K/ea), to be used for classification
 
 3. __/annotations__*: confidence and binary masks denoting the outline of power plants. Meaning of pixel values in sub-folders: <br/>
-a) /confidence: number of annotators bounding it within a power plant<br/>
-b) /binary: whether or not more than half of all annotators agree that it is part of a power plant
+a) accepted\_ann\_json.txt: accepted annotations collected from Amazon Mechanical Turk, in JSON text;<br/>
+b) /confidence: confidence maps, at each pixel the value equals the number of annotators labeling it as part of a power plant<br/>
+c) /binary: binary mask with each pixel denoting whether or not more than half of all annotators agree that it is part of a power plant
 
 4. _/exceptions_*: instances with no valid annotations (most likely no visible power plants; or in a very small chance, all of three annotations were rejected);
 
 5. __uspp\_metadata.geogson__*: geographic location, unique egrid id, plant name, state and county name, primary fuel, fossil fuel category, capacity factor, nameplate capacity, and CO<sub>2</sub> emission data;<br/>
 Visualization available here: https://github.com/bl166/USPowerPlantDataset/blob/master/uspp_metadata.geojson;
 
-6. _accepted\_ann\_json.txt_: accepted annotations collected from Amazon Mechanical Turk;<br/>
-Annotation tool available here: https://github.com/tn74/MTurkAnnotationTool;
+6. *egrid2014\_data\_v2\_PLNT14.xlsx*: A subset of the Egrid document which contains US power plant locations and other information;
 
-7. _egrid2014\_data\_v2_PLNT14.xlsx_: A subset of the Egrid document which contains US power plant locations and other information;
+7. ```cropPowerPlants(.py)```: exports satellite imagery from Google Earth Engine;
 
-8. ```cropPowerPlants(.py)```: exports satellite imagery from Google Earth Engine;
+8. ```fixLs(.m)```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
 
-9. ```fixLs(.m)```: preprocesses the Landsat imagery, including intensity stretch and gamma correction;
+9. ```getAllAcceptedCondensed(.py)```: generate a condensed annotation file from all accepted annotations with each image taking one line (NOTE: This script is NOT runable unless you have all accepted annotations, but not to worry because we have provided its output as *accepted\_ann\_json.txt*);
 
-10. ```getAllAcceptedCondensed(.py)```: generate a condensed annotation file from all accepted annotations with each image taking one line (NOTE: This script is NOT runable unless you have all accepted annotations, but not to worry because we have provided its output as *accepted\_ann\_json.txt*);
+10. ```make(.py)```: constructs the dataset;
 
-11. ```make(.py)```: constructs the dataset;
+11. ```report(.py)```: generates a pie chart showing the data categorized by fuel type;
 
-12. ```report(.py)```: generates a pie chart showing the data categorized by fuel type;
-
-13. __```classify_sample(.py)```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
+12. __```classify_sample(.py)```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
 
 ## 2 &nbsp; Dataset Construction
 ### 2.0 Overview
@@ -45,6 +43,7 @@ This dataset was constructed in three phases:
 * __P1DATAPREP__ (data preparation) - Download satellite imagery;
 * __P2ANNOGEN__ (annotations generation) - Gather annotations of power plants;
 * __P3DATAPROC__ (dataset processing) - Merge accepted annotations, create binary labels, and compile metadata.
+* __P4TESTCLSFR__ (optional, test classifier) - Image segmentation by pixel-based classification.
 
 ### 2.1 Satellite Imagery Download
 #### Dependencies
@@ -95,12 +94,12 @@ https://github.com/bl166/USPowerPlantDataset/blob/master/P3DATAPROC_make.py
 
 #### Steps
 * __1\. Items that you should already have before running the script:__<br/>
-* __```/uspp_naip```__: NAIP data with unprocessed images' names being ```ID.tif```;<br/>
-* __```egrid2014\_data\_v2\_PLNT14.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
+* __```/uspp_naip```__: NAIP data with unprocessed images' names being _ID.tif_;<br/>
+* __```egrid2014_data_v2_PLNT14.xslx```__: the original metadata from which we read locations and cropped those power plants out; <br/>
 * __```accepted_ann_json.txt```__: annotations from the MTurkers.<br/>
 
 Note: _Items mentioned above should be directly under the root directory and named exactly as quoted. Otherwise the construction will fail._<br/>
-* (Optional, but strongly recommended!) __```/uspp_landsat```__: Landsat8 data with unprocessed images' names being ```ID.tif```.<br/>
+* (Optional, but strongly recommended!) __```/uspp_landsat```__: Landsat8 data with unprocessed images' names being _ID.tif_.<br/>
 
 NOTE: _If you do not have this folder, annotations will still be generated._<br/>
 * __2\. Preprocessing the Landsat8 data.__<br/>
@@ -159,4 +158,4 @@ $ python classify_sample.py
 * Boning Li
 * Trishul Nagenalli
 
-Project: [_Detecting Electricity Access from Aerial Imagery](http://bigdata.duke.edu/projects/electricity-access-developing-countries-aerial-imagery), Duke Data+ 2017
+Project: [_Detecting Electricity Access from Aerial Imagery_](https://bigdata.duke.edu/projects/electricity-access-developing-countries-aerial-imagery), Duke Data+ 2017
