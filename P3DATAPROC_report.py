@@ -23,21 +23,22 @@ def my_autopct(pct):
 # plot pie chart
 def pieplot(t_dict):
     # non repeating color scheme
-    color = sns.color_palette("husl", len(t_dict))
+    color = sns.color_palette("Set2", len(t_dict))
 
     # labels and values
     labs = t_dict.keys()
     vals = list(t_dict.values())
 
     # figure and plot
-    f = plt.figure()
+    f = plt.figure(figsize=(14.0, 10.0))
     ax = f.add_subplot(111,aspect=1)
     plt.pie(vals,labels=labs,autopct=my_autopct,colors=color)
 
     # title and legend
-    ax.set_title('U.S. Power Plants Categoried by Fuel')
-    ax.legend(bbox_to_anchor=(0,0.5))
+    ax.set_title('U.S. Power Plants Categorized by Fuel',fontsize=20)
+    ax.legend(bbox_to_anchor=(0,0.5),fontsize=14)
 
+    plt.savefig('power_plants_by_fuel_categ.png',bbox_inches='tight',dpi='figure')
     plt.show()
 
 # data report
