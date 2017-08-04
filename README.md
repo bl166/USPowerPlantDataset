@@ -35,7 +35,9 @@ Annotation tool available here: https://github.com/tn74/MTurkAnnotationTool;
 
 11. ```make(.py)```: constructs the dataset;
 
-12. __```classify_sample(.py)```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
+12. ```report(.py)```: generates a pie chart showing the data categorized by fuel type;
+
+13. __```classify_sample(.py)```__: tests a simple segmentation task (pixel-wise classification) on this dataset.
 
 ## 2 &nbsp; Dataset Construction
 ### 2.0 Overview
