@@ -92,7 +92,6 @@ class USPP:
 
     # add detailed info to image data names
     def _rename(self):
-        print('y')
         os.rename(os.path.join(self.targets['root_dir'],self.targets['naip_dir'],self.names['old_name_n']),
                   os.path.join(self.targets['root_dir'],self.targets['naip_dir'],self.names['new_name_n']))
         if self.setflag:
