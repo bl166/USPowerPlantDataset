@@ -14,8 +14,10 @@ fprintf('|     Progress     |\n')
 progressIntervals = ceil(length(files)/20);
 for i=1:length(files)
     map=(imread(fullfile(path,files(i).name)));
-	im=imadjust(map,[0.03; 0.3],[0; 1],1.4) ;
-    imwrite(mat2gray(im),fullfile(path,files(i).name))
+	nmask=map;
+	nmask(~isnan(nmask))=0;
+	%map=imadjust(map,[0.03; 0.3],[0; 1],1.4) ;
+    imwrite(mat2gray(map)+nmask,fullfile(path,files(i).name))
     if i~=1 && ~mod(i-1,progressIntervals)
     	fprintf('|')
     end
