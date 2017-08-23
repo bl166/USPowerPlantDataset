@@ -18,10 +18,18 @@ import numpy as np
 from xlrd import open_workbook
 
 ee.Initialize()
+
+# ----------------------------------------------------------
+# Function to inverse the cloud scores
+# ----------------------------------------------------------
+def cloudScore(img):
+  score=img.select('fmask').multiply(-1).rename(['CloudS'])
+  return img.addBands(score)
+
+# ----------------------------------------------------------
 # Function to download powerplant pictures
 # takes 2~4 arguments: id_start, id_end, order, collection
-
-
+# ----------------------------------------------------------
 def download_ppt_pic(id_start,id_end,*args, **kwargs):
 	# set default options
 	collection = kwargs.get('collection', 'naip')
@@ -40,16 +48,23 @@ def download_ppt_pic(id_start,id_end,*args, **kwargs):
 
 	#********** Pan-sharpened Landsat **********
 	elif collection=='ls8':
-		collection_ls8 = ee.ImageCollection('LANDSAT/LC8_L1T_TOA').filterDate('2014-01-01', '2014-12-30')
-		# reduce the image stack to every pixel's median value
-		img_red = collection_ls8.reduce(ee.Reducer.median())
-		# pan sharpening by hsv & panchromatic band
-		rgb = img_red.select('B4_median', 'B3_median', 'B2_median')
-		gray = img_red.select('B8_median')
-		huesat = rgb.rgbToHsv().select('hue', 'saturation')
-		image = ee.Image.cat(huesat, gray).hsvToRgb()
-		# resolution = 15m
-		res = 15
+		# collection_ls8 = ee.ImageCollection('LANDSAT/LC8_L1T_TOA').filterDate('2014-01-01', '2014-12-30')
+		# # reduce the image stack to every pixel's median value
+		# img_red = collection_ls8.reduce(ee.Reducer.median())
+
+	    collection = ee.ImageCollection('LANDSAT/LC8_L1T_TOA_FMASK').filter(ee.Filter.date('2014-01-01', '2014-12-31'))\
+	    	.filter(ee.Filter.geometry(ee.Geometry.Rectangle([-127.18,19.39,-62.75,51.29])))
+
+	    # reduce by cloud scores
+	    collection_ls8 = collection.map(cloudScore);
+	    img_red = collection_ls8.qualityMosaic('CloudS').select(['B2', 'B3', 'B4', 'B8'])
+	    # pan sharpening by hsv & panchromatic band
+	    rgb = img_red.select('B4', 'B3', 'B2')
+	    gray = img_red.select('B8')
+	    huesat = rgb.rgbToHsv().select('hue', 'saturation')
+	    image = ee.Image.cat(huesat, gray).hsvToRgb()
+	    # resolution = 15m
+	    res = 15
 
 	else:
 		print('I couldn\'t find the '+collection+' collection. Please choose between \'naip\'(default) and \'ls8\'.')
@@ -85,9 +100,9 @@ def download_ppt_pic(id_start,id_end,*args, **kwargs):
 
 			# configurations for export
 			config_d = {
-				'scale': res,				# resolution
-				'skipEmptyTiles': True,		 	# action flag
-				'maxPixels':1E13,			# max: 1E13
+				'scale': res,							# resolution
+				'skipEmptyTiles': True,		 			# action flag
+				'maxPixels':1E13,						# max: 1E13
 				'folder': 'PowerPlants_'+collection  	# destination
 			}
 
@@ -104,4 +119,3 @@ def download_ppt_pic(id_start,id_end,*args, **kwargs):
 if __name__ == '__main__':
 	id_start,id_end = (300,500) # include id_start, exclude id_end
 	download_ppt_pic(id_start,id_end,order='descend',collection='ls8')
-
