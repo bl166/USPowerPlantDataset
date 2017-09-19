@@ -3,3 +3,5 @@
 
 # ignore obsolete annotations
 *.txt
+
+*DS_Store
